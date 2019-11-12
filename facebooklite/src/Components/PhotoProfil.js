@@ -8,12 +8,14 @@ class PhotoProfil extends React.Component{
     }
     render(){
 
-        const photoprofil  = this.props;
-        const { src, alt } = photoprofil;
+        //const photoprofil  = this.props;
+       // const { src, alt } = photoprofil;
+        console.log(this.props.photoprofil.src);
+        //console.log(src)
 
         return(
             <div>
-                <img src={src} alt={alt}/>
+                <img src={this.props.photoprofil.src} alt={this.props.photoprofil.alt}/>
             </div>
         );
     }

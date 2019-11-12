@@ -5,7 +5,7 @@ class Infos extends React.Component{
         const infos = this.props.infos;
         return(
             <div>
-                Prénom {infos.firstname}
+                Prénom {infos.firstname}<br/>
                 Nom {infos.surname}
                 Date de naissance {infos.birthday}
             </div>

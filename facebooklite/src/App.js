@@ -4,6 +4,7 @@ import './App.css';
 import Header from './Header';
 import Profils from './Components/Profils';
 
+import imageProfil1 from './profil-inconnu-femme.jpg'
 
 
 
@@ -15,7 +16,7 @@ import Profils from './Components/Profils';
       birthday: "06/05/1989"
     },
     image: {
-      src: 'profil-inconnu-femme.jpg',
+      src: imageProfil1,
       alt : "Jeanne"
     }
   }

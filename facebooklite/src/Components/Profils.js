@@ -6,10 +6,11 @@ class Profils extends React.Component{
     render(){
 
         const { infos, photoprofil } = this.props.profilsData;
-        
+        console.log(photoprofil)
+        console.log(this.props.profilsData)
         return(
             <div>
-                <PhotoProfil photoprofil={photoprofil}/>
+                <PhotoProfil photoprofil={this.props.profilsData.image}/>
                 <Infos infos={infos}/>
             </div>
         )
