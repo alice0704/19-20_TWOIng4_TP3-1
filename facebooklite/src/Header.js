@@ -1,12 +1,13 @@
 import React from "react";
+import './Header.css';
 
 class Header extends React.Component{
     render(){
         return(
-            <div>
-                <button>Jeanne</button>
-                <button>Martine</button>
-                <button>Claude</button>
+            <div className="headerStyle">
+                <button className= "nav">Jeanne</button>
+                <button className="nav">Martine</button>
+                <button className="nav">Claude</button>
             </div>
         );
     }

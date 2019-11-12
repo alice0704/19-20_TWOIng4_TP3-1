@@ -1,0 +1,29 @@
+.Profils {
+    text-align: center;
+  }
+
+img{
+    max-width: 30%;
+    height: auto;
+}
+.affichage {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    border: solid;
+    background-color: rgb(237, 188, 243);
+}
+
+.firstname {
+    text-align: left;
+}
+
+.Bstyle {
+    text-align: right;
+    text-align: bottom;
+    margin-top: 20%;
+}

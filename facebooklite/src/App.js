@@ -5,6 +5,7 @@ import Header from './Header';
 import Profils from './Components/Profils';
 
 import imageProfil1 from './profil-inconnu-femme.jpg'
+import Publication from './Publication/Publication';
 
 
 
@@ -26,8 +27,9 @@ import imageProfil1 from './profil-inconnu-femme.jpg'
   render(){
     return( 
     <div>
-      <h2>Mon profil</h2>
+      <Header/>
       <Profils profilsData={profil1}/>
+      <Publication/>
     </div>
     );
   }
