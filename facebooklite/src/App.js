@@ -2,24 +2,31 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
+import Profils from './Components/Profils';
 
-class App extends React.Component{
+
+
+
   
-  /*const profil1 = {
-    Profils: {
+  const profil1 = {
+    infos: {
       firstname: "Jeanne",
-      surname: "Dupont"
+      surname: "Dupont",
+      birthday: "06/05/1989"
+    },
+    image: {
+      src: 'profil-inconnu-femme.jpg',
+      alt : "Jeanne"
     }
-  }*/
+  }
 
 
-  
-  
-  
+ class App extends React.Component{ 
   render(){
     return( 
     <div>
-      <Header></Header>
+      <h2>Mon profil</h2>
+      <Profils profilsData={profil1}/>
     </div>
     );
   }

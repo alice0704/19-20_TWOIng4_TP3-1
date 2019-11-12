@@ -1,16 +1,17 @@
 import React from "react";
 
-class Profils extends React.Component{
+class Infos extends React.Component{
     render(){
+        const infos = this.props.infos;
         return(
             <div>
-               Prénom {this.props.firstname}
-               Nom {this.props.surname}
-               Date de naissance {this.props.birthday}
+                Prénom {infos.firstname}
+                Nom {infos.surname}
+                Date de naissance {infos.birthday}
             </div>
         );
 }
 
 }
 
-export default Profils;
+export default Infos;
