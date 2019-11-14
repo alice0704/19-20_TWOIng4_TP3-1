@@ -9,6 +9,7 @@ class Publication extends React.Component{
         const publication = this.props.publication;
         return(
             <div>
+                
                 <p>  Message : {publication.msg}</p> 
             </div>
 

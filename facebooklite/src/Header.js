@@ -16,7 +16,7 @@ class Header extends React.Component{
             <div className="headerStyle">
                 <Link to="/Jeanne"><h4 id="content"> <small className="text-white" className="espace">Jeanne</small></h4></Link>
                 <Link to="/Martine"><h4 id="content"> <small className="text-white" className="espace">Martine</small></h4></Link>
-                <button className="nav">Claude</button>
+                <Link to="/Claude"><h4 id="content"> <small className="text-white" className="espace">Claude</small></h4></Link>
             </div>
         );
     }

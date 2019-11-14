@@ -2,10 +2,32 @@ import React from "react";
 import Infos from './Infos';
 import PhotoProfil from './PhotoProfil';
 import './Profils.css';
-import ModifierProfil from "./ModifierProfil";
+
 import Publication from '../Publication/Publication';
 
 class Profils extends React.Component{
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            couleur : 'white' 
+        }
+        this.newColor = this.newColor.bind(this);
+    }
+
+    newColor(event){
+        if (this.state.couleur === 'white'){
+            this.setState({
+                couleur : 'pink'
+            })
+        }
+        if (this.state.couleur === 'pink'){
+            this.setState({
+                couleur : 'white'
+            })
+        }
+    
+}
     render(){
 
         const { infos, photoprofil, publication } = this.props.profilsData;
@@ -14,12 +36,10 @@ class Profils extends React.Component{
         console.log(this.props.profilsData)
         return(
             <div>
-            <div className="affichage" >
+            <div className="affichage" style={{backgroundColor: this.state.couleur}}>
                 <PhotoProfil photoprofil={this.props.profilsData.image}/>
                 <Infos infos={infos}/>
-                    <div className="Bstyle">
-                        <ModifierProfil/>
-                    </div>
+                <button onClick={this.newColor}>Changer style</button>
             </div>
             <div>
                 <Publication publication={publication}/>
