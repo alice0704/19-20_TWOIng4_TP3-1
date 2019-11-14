@@ -3,15 +3,17 @@ import Infos from './Infos';
 import PhotoProfil from './PhotoProfil';
 import './Profils.css';
 import ModifierProfil from "./ModifierProfil";
+import Publication from '../Publication/Publication';
 
 class Profils extends React.Component{
     render(){
 
-        const { infos, photoprofil } = this.props.profilsData;
+        const { infos, photoprofil, publication } = this.props.profilsData;
+
         console.log(photoprofil)
         console.log(this.props.profilsData)
         return(
-            
+            <div>
             <div className="affichage" >
                 <PhotoProfil photoprofil={this.props.profilsData.image}/>
                 <Infos infos={infos}/>
@@ -19,7 +21,10 @@ class Profils extends React.Component{
                         <ModifierProfil/>
                     </div>
             </div>
-            
+            <div>
+                <Publication publication={publication}/>
+            </div>
+            </div>
         )
     }
 

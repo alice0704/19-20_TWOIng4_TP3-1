@@ -1,10 +1,16 @@
 import React from "react";
 import './Profils.css';
 
+
+
+
+
 class ModifierProfil extends React.Component{
+    
+
     render(){
         return(
-            <button>Changer style</button>
+            <button onClick={this.changeColor}>Changer style</button>
         );
 }
 

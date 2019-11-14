@@ -1,12 +1,21 @@
 import React from "react";
 import './Header.css';
+import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 
 class Header extends React.Component{
+
+    constructor(props) {
+        super(props);
+        this.state = {
+          value: null,
+        };
+      }
+
     render(){
         return(
             <div className="headerStyle">
-                <button className= "nav">Jeanne</button>
-                <button className="nav">Martine</button>
+                <Link to="/Jeanne"><h4 id="content"> <small className="text-white" className="espace">Jeanne</small></h4></Link>
+                <Link to="/Martine"><h4 id="content"> <small className="text-white" className="espace">Martine</small></h4></Link>
                 <button className="nav">Claude</button>
             </div>
         );
