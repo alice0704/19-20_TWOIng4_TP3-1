@@ -1,13 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Header from './Header';
 import Profils from './Components/Profils';
+import imageProfil3 from './Claude.jpg';
 
-import imageProfil1 from './profil-inconnu-femme.jpg';
-import imageProfil2 from './profil-inconnu-femme.jpg';
-import imageProfil3 from './profil-inconnu-femme.jpg';
-import Publication from './Publication/Publication';
 
 
 const profil3 = {

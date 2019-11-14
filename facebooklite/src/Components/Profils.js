@@ -13,6 +13,11 @@ class Profils extends React.Component{
             couleur : 'white' 
         }
         this.newColor = this.newColor.bind(this);
+
+        /*this.state = {
+            super : 0
+        }
+        this.newLike = this.newLike.bind(this);*/
     }
 
     newColor(event){
@@ -28,6 +33,14 @@ class Profils extends React.Component{
         }
     
 }
+
+/*newLike(event){
+    this.setState({
+        super: this.state.super +1
+    });
+}*/
+
+
     render(){
 
         const { infos, photoprofil, publication } = this.props.profilsData;
@@ -38,11 +51,13 @@ class Profils extends React.Component{
             <div>
             <div className="affichage" style={{backgroundColor: this.state.couleur}}>
                 <PhotoProfil photoprofil={this.props.profilsData.image}/>
-                <Infos infos={infos}/>
-                <button onClick={this.newColor}>Changer style</button>
+                <Infos infos={infos}/><br></br>
+                <button onClick={this.newColor} className="Bstyle">Changer style</button>
             </div>
-            <div>
+            <div className="publi">
                 <Publication publication={publication}/>
+               
+                
             </div>
             </div>
         )

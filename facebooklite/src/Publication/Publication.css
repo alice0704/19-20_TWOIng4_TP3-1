@@ -2,7 +2,6 @@
     border: solid;
     text-align: center;
     padding-top: 1%;
-    padding-bottom: 1%;
     padding-right: 1%;
     margin-left: 20%;
     margin-right: 20%;
@@ -11,5 +10,5 @@
 }
 
 .like {
-    margin-left: 2%;
+    text-align: right;
 }

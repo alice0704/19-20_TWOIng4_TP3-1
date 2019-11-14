@@ -10,7 +10,8 @@ class Publication extends React.Component{
         return(
             <div>
                 
-                <p>  Message : {publication.msg}</p> 
+                <p>  Dernier message : {publication.msg} </p> 
+                <p className="like"><Like/></p>
             </div>
 
         );
